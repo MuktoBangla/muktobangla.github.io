@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: MuktoBangla
 
 # import hextra as module
 module:
@@ -24,8 +24,8 @@ menu:
     - name: About
       pageRef: /about
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    - name: Contact
+      url: "https://github.com/MuktoBangla/muktobangla.github.io"
       weight: 3
     - name: Search
       weight: 4
@@ -36,11 +36,11 @@ menu:
       url: "https://github.com/imfing/hextra-starter-template"
       params:
         icon: github
-    - name: Twitter
+    - name: Mastodon
       weight: 6
-      url: "https://twitter.com/"
+      url: "https://mastodon.social"
       params:
-        icon: x-twitter
+        icon: mastodon
 
 params:
   navbar:
@@ -53,4 +53,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    base: "https://github.com/MuktoBangla/muktobangla.github.io/tree/main/content"
