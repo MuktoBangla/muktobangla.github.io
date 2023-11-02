@@ -1,6 +1,22 @@
 # Hugo configuration file
 title: MuktoBangla
 
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: bn
+languages:
+  bn:
+    languageName: বাংলা
+    weight: 1
+    title: মুক্তবাংলা
+  en:
+    languageName: English
+    weight: 2
+    title: MuktoBnagla
+
 # import hextra as module
 module:
   imports:
@@ -15,6 +31,8 @@ markup:
   # enable hextra syntax highlight
   highlight:
     noClasses: false
+
+enableInlineShortcodes: true
 
 menu:
   main:
@@ -46,14 +64,68 @@ menu:
         icon: mastodon
 
 params:
+  description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
+
   navbar:
     displayTitle: true
     displayLogo: false
+    # logo:
+    #   path: static/logo.svg
+    #   dark: static/logo-dark.svg
+    #   # width: 40
+    #   # height: 20
+    #   # link: /
+    width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
 
   footer:
+    enable: true
     displayCopyright: false
     displayPoweredBy: true
+    width: wide
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
 
   editURL:
     enable: true
     base: "https://github.com/MuktoBangla/muktobangla.github.io/tree/main/content"
+
+  blog:
+    list:
+      displayTags: true
+
+  comments:
+    enable: false
+    type: giscus
+
+    # https://giscus.app/
+    giscus:
+      repo: imfing/hextra
+      repoId: R_kgDOJ9fJag
+      category: General
+      categoryId: DIC_kwDOJ9fJas4CY7gW
+      # mapping: pathname
+      # strict: 0
+      # reactionsEnabled: 1
+      # emitMetadata: 0
+      # inputPosition: top
+      # lang: en
