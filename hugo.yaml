@@ -46,7 +46,7 @@ menu:
       pageRef: /about
       weight: 3
     - name: Contact
-      url: "https://github.com/MuktoBangla"
+      url: "https://github.com/MuktoBangla/muktobangla.github.io/discussions"
       weight: 4
     - name: Search
       weight: 5
