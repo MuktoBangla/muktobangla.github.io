@@ -36,16 +36,20 @@ enableInlineShortcodes: true
 
 menu:
   main:
-    - name: Docs
+    - identifier: docs
+      name: Documentation
       pageRef: /docs
       weight: 1
-    - name: Blog
+    - identifier: blog
+      name: Blog
       pageRef: /blog
       weight: 2
-    - name: About
+    - identifier: about
+      name: About
       pageRef: /about
       weight: 3
-    - name: Contact
+    - identifier: contact
+      name: Contact
       url: "https://github.com/MuktoBangla/muktobangla.github.io/discussions"
       weight: 4
     - name: Search
