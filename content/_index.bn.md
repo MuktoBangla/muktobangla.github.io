@@ -1,5 +1,5 @@
 ---
-title: মুক্তবাংলা
+title: MuktoBnagla
 toc: false
 ---
 
